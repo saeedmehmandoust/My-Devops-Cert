@@ -1,2 +1,2 @@
 Devops Study: 
-[] vagrant First Steps. 
+[x] vagrant First Steps. 
