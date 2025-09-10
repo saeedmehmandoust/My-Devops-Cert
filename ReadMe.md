@@ -1,6 +1,6 @@
 Devops Study: 
-1.  [ ] Linux Review
-2.  [ ] Git 
-3.  [ ] Ansible
+1.  [x] Linux Review
+2.  [x] Git 
+3.  [] Ansible
 
 
