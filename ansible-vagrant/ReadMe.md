@@ -1,6 +1,5 @@
-Perfect 👍 Here’s the same **README.md** in English, formatted for GitHub:
-
-````markdown
+````
+markdown
 # Ansible + Windows VM (VMware Workstation)
 
 This project demonstrates how to manage a **Windows virtual machine** running on **VMware Workstation** using **Ansible**.  
@@ -80,6 +79,4 @@ windows_host | SUCCESS => {
 ```
 
 ---
-
-Do you also want me to add the **playbook example (copying Vagrantfile & running vagrant up)** to this README as a section? That way your repo shows the full workflow.
-```
+````
