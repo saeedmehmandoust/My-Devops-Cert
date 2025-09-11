@@ -1,0 +1,27 @@
+- name: Manage Vagrant on remote VMware host (Windows)
+  hosts: windows_host
+  tasks:
+    - name: Create project folder
+      win_file:
+        path: e:\ansible-vagrant\vagrant_project
+        state: directory
+
+    - name: Copy Vagrantfile to remote host
+      copy:
+        src: ./Vagrantfile
+        dest: "e:\\ansible-vagrant\\Vagrantfile"
+
+    - name: Run vagrant up
+      win_command: vagrant up --provider=vmware_workstation
+      args:
+        chdir: e:\ansible-vagrant
+
+    - name: Show vagrant status
+      win_command: vagrant status
+      args:
+        chdir: e:\ansible-vagrant
+      register: vagrant_status
+
+    - name: Print vagrant status output
+      debug:
+        msg: "{{ vagrant_status.stdout }}"

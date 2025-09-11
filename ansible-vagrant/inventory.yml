@@ -1,0 +1,9 @@
+all:
+  hosts:
+    windows_host:
+      ansible_host: 192.168.91.1
+      ansible_user: Lenovo
+      ansible_password: "789"
+      ansible_connection: winrm
+      ansible_winrm_transport: basic
+      ansible_port: 5985
